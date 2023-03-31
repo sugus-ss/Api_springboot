@@ -1,0 +1,42 @@
+GET /students
+{
+    {
+        "id" : "01",
+        "name" : "gan",
+        "faculty" : "Computer Engineering"
+    },
+    {
+        "id" : "02",
+        "name" : "gus",
+        "faculty" : "Computer engineering"
+    }
+}
+
+GET /students/:id -> /student/01
+{
+        "id" : "01",
+        "name" : "gan",
+        "faculty" : "Computer Engineering",
+        "birthday" : "31/12/2000",
+        "address" : "1010 bangkok"
+}
+
+PUT /students
+{
+        "name" : "zozo",
+        "faculty" : "Computer engineering",
+        "birthday" : "31/12/2000",
+        "address" : "1010 bangkok"
+}
+
+POST /students/09
+{
+        "name" : "momo",
+        "faculty" : "Computer engineering",
+        "birthday" : "31/12/2000",
+        "address" : "1010 bangkok"
+}
+
+DELETE /students/01
+
+MODEL -> CONTROLLER -> VIEW
